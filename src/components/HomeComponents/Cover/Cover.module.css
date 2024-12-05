@@ -1,6 +1,6 @@
 .cover{
     background-image: url("../../../assets/HomeCover.png");
-    background-position: center;
+    background-position: top;
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -8,4 +8,37 @@
     grid-template-columns: 50% 50%;
     display: grid;
     padding: 50px 0px;
+}
+.coverContent h1{
+    font-size: 3.8rem;
+}
+.subTitle{
+    color: #616060;
+}
+.shopNow{
+    margin: 40px 0px;
+    background-color: black;
+    padding: 15px 20px;
+    border-radius:40px;
+    color: white;
+    text-align: center;
+    max-width:150px ;
+}
+.statistics{
+    display: flex;
+    flex-direction: row;
+    flex-basis: 1 1 1;
+    justify-content: space-between;
+}
+.statistics div:nth-of-type(2),
+.statistics div:nth-of-type(3){
+border-left: 2px solid rgba(97, 96, 96, 0.448);
+padding-left: 40px;
+}
+.statistics h2{
+    margin: 0;
+}
+.statistics span{
+color: #616060;
+font-size: 14px;
 }
