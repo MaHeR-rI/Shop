@@ -1,0 +1,6 @@
+.container {
+    width: 90%;           /* Takes 90% of the viewport width */
+    max-width: 1200px;    /* Prevents it from growing beyond 1200px */
+    margin: 0 auto;       /* Centers the container horizontally */
+    padding: 20px;        /* Adds space inside the container */
+  }
