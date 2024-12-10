@@ -1,0 +1,24 @@
+.StyleContainer{
+    background-color: #f0f0f0;
+    padding: 20px 40px 40px;
+    border-radius: 20px;
+}
+.flexSection{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+.flexSection img{
+    padding: 10px;
+    cursor: pointer;
+}
+.flexSection img:nth-of-type(1),
+.flexSection img:nth-of-type(4){
+    flex:32.5% ;
+    width: 32.5% ;
+}
+.flexSection img:nth-of-type(2),
+.flexSection img:nth-of-type(3){
+    flex: 67.5% ;
+    width: 67.5% ;
+}

@@ -29,6 +29,14 @@
   color: white;
   text-align: center;
   max-width: 200px;
+  transition: 0.3s;
+  cursor: pointer;
+  border: 1px solid black;
+}
+.shopNow:hover{
+  background-color: white;
+  color: black;
+  transform: scale(1.02);
 }
 .statistics {
   display: flex;

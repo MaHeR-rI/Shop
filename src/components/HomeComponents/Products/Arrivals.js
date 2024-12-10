@@ -13,6 +13,8 @@ const Arrivals=()=>{
                 <Card />
                 <Card />
             </div>
+            <p className={classes.button}>View All</p>
+            <hr />
         </Container>
     )
 }

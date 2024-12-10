@@ -14,3 +14,10 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+.react-multi-carousel-list{
+  flex: 1 !important;
+  padding: 20px 0px;
+}
+.react-multi-carousel-list ul li{
+  padding: 0px 10px !important;
+}

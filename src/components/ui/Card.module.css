@@ -1,3 +1,10 @@
+.card{
+  cursor: pointer;
+  transition: 0.3s;
+}
+.card:hover{
+   transform: scale(1.02); 
+}
 .card img {
   width: 100%;
 }
@@ -7,5 +14,37 @@
 }
 .card h3 {
   font-weight: 800;
-  margin-bottom: 0;
+  margin: 0;
+  display: inline-block;
+}
+.rate{
+  margin: 10px 0px 5px;
+}
+.card .price,
+.card .price h3{
+  margin:0px;
+}
+.card .price h3 .oldPrice{
+  color: #616060;
+  text-decoration: line-through;
+  font-weight: 800;
+  margin-left: 8px;
+}
+.price p{
+  background-color: #FFEBEB;
+  color: red;
+  border-radius: 12px;
+  text-align: center;
+  margin: 0;
+  display: inline-block;
+  padding:5px 10px;
+  font-size: 11px;
+  margin-left: 8px;
+}
+.rate .rateValue{
+  color: #616060;
+  font-size: 14px;
+}
+.rate .black{
+  color: black;
 }
