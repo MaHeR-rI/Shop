@@ -1,17 +1,24 @@
 {
   "files": {
-    "main.css": "/shop/static/css/main.6782398c.css",
-    "main.js": "/shop/static/js/main.39320de2.js",
+    "main.css": "/shop/static/css/main.05e6b5bb.css",
+    "main.js": "/shop/static/js/main.6c323068.js",
     "static/js/453.0f4552a2.chunk.js": "/shop/static/js/453.0f4552a2.chunk.js",
     "static/media/HomeCover.png": "/shop/static/media/HomeCover.bcaf3b70e5ca407c2275.png",
+    "static/media/style3.png": "/shop/static/media/style3.b68f057ce53da41d9c12.png",
+    "static/media/style2.png": "/shop/static/media/style2.64f71ac64ee52d60768c.png",
+    "static/media/style1.png": "/shop/static/media/style1.c8fb4c6af5d3ee11d31f.png",
+    "static/media/style4.png": "/shop/static/media/style4.891a9ec9dd2f13167c12.png",
     "static/media/product1.png": "/shop/static/media/product1.baa7d7b54b3efa8ece92.png",
+    "static/media/revicons.eot": "/shop/static/media/revicons.a77de540a38981833f9e.eot",
+    "static/media/revicons.ttf": "/shop/static/media/revicons.57fd05d4ae650374c8de.ttf",
+    "static/media/revicons.woff": "/shop/static/media/revicons.e8746a624ed098489406.woff",
     "index.html": "/shop/index.html",
-    "main.6782398c.css.map": "/shop/static/css/main.6782398c.css.map",
-    "main.39320de2.js.map": "/shop/static/js/main.39320de2.js.map",
+    "main.05e6b5bb.css.map": "/shop/static/css/main.05e6b5bb.css.map",
+    "main.6c323068.js.map": "/shop/static/js/main.6c323068.js.map",
     "453.0f4552a2.chunk.js.map": "/shop/static/js/453.0f4552a2.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.6782398c.css",
-    "static/js/main.39320de2.js"
+    "static/css/main.05e6b5bb.css",
+    "static/js/main.6c323068.js"
   ]
 }
