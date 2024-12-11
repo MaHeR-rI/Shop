@@ -1,0 +1,18 @@
+import classes from "./Review.module.css";
+import img from "../../assets/certified.png";
+import { Rating } from "react-simple-star-rating";
+
+const Review = () => {
+  return (
+    <div className={classes.Review}>
+      <div className={classes.rate}>
+        <Rating initialValue={5} readonly={true} size={20}/>
+      </div>
+      <h3>Sara M. <img src={img} alt="product" width="24px"/></h3>
+      <div className={classes.content}>
+      "I'm blown away by the quality and style of the clothes I received from Shop.co. From casual wear to elegant dresses, every piece I've bought has exceeded my expectations.”
+      </div>
+    </div>
+  );
+};
+export default Review;
