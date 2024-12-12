@@ -1,0 +1,37 @@
+.footerTop{
+    background: linear-gradient( white 50%, #f0f0f0 50%);
+    /* background: linear-gradient(#e66465, #9198e5); */
+        padding: 20px 0px;
+}
+.form{
+    background-color: black;
+    padding:25px 50px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.form h1{
+    color: white;
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    flex: 1;
+}
+.form form{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    text-align: right;
+    gap: 20px;
+}
+.form form input,
+.form form button{
+    background-color: white;
+    padding: 15px 30px;
+    width: 300px;
+    margin-left:auto;
+    border-radius: 40px;
+}
+.form form button{
+    cursor: pointer;
+}
