@@ -11,9 +11,10 @@ const Style = () => {
     <Container>
       <div className={classes.StyleContainer}>
         <Title>BROWSE BY dress STYLE</Title>
-        <div className={classes.flexSection}>
+        <div className={classes.gridSection}>
           <img src={style1} alt="style1" />
-          <img src={style2} alt="style2" />
+          <img src={style2} alt="style2" /></div>
+          <div className={classes.gridSection2}>
           <img src={style3} alt="style3" />
           <img src={style4} alt="style4" />
         </div>

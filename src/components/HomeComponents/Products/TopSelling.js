@@ -27,7 +27,7 @@ const TopSelling = () => {
   };
   return (
     <Container>
-      <Title>new arrivals</Title>
+      <Title>Top selling</Title>
         <Carousel responsive={responsive}
         transitionDuration={500}
         draggable={false}

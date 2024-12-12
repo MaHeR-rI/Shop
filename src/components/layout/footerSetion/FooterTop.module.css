@@ -5,7 +5,7 @@
 }
 .form{
     background-color: black;
-    padding:25px 50px;
+    padding:30px 50px;
     border-radius: 20px;
     display: flex;
     flex-direction: row;
@@ -13,9 +13,10 @@
 }
 .form h1{
     color: white;
-    font-size: 2.5rem;
+    font-size: 2.3rem;
     text-transform: uppercase;
     flex: 1;
+    font-weight: 700;
 }
 .form form{
     flex: 1;
@@ -27,7 +28,7 @@
 .form form input,
 .form form button{
     background-color: white;
-    padding: 15px 30px;
+    padding: 12px 30px;
     width: 300px;
     margin-left:auto;
     border-radius: 40px;

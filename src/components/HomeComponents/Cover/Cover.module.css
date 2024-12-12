@@ -17,9 +17,12 @@
 .coverContent h1 {
     margin-top: 0;
   font-size: 3.8rem;
+  color: black;
+  font-weight: 700;
 }
 .subTitle {
   color: #616060;
+  margin-bottom: 0px;
 }
 .shopNow {
   margin: 40px 0px;
@@ -53,6 +56,8 @@
 }
 .statistics h2 {
   margin: 0;
+  color: black;
+  font-weight: 600;
 }
 .statistics span {
   color: #616060;

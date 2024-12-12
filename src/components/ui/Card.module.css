@@ -1,6 +1,7 @@
 .card{
   cursor: pointer;
   transition: 0.3s;
+  color: black;
 }
 .card:hover{
    transform: scale(1.02); 
@@ -8,29 +9,34 @@
 .card img {
   width: 100%;
 }
-.card h4 {
+.card .productName {
   font-weight: 700;
   margin-bottom: 0;
+  margin-top: 12px;
+  font-size: 1.1rem;
 }
-.card h3 {
+.card .productPrice {
   font-weight: 800;
   margin: 0;
   display: inline-block;
 }
 .rate{
-  margin: 10px 0px 5px;
+  margin: 5px 0px;
+  display: flex;
+  flex-direction: row;
+  align-items: end;
 }
 .card .price,
-.card .price h3{
+.card .price .productPrice{
   margin:0px;
 }
-.card .price h3 .oldPrice{
+.card .price .productPrice .oldPrice{
   color: #616060;
   text-decoration: line-through;
   font-weight: 800;
   margin-left: 8px;
 }
-.price p{
+.price .sale{
   background-color: #FFEBEB;
   color: red;
   border-radius: 12px;
@@ -43,7 +49,8 @@
 }
 .rate .rateValue{
   color: #616060;
-  font-size: 14px;
+  font-size: 16px;
+  padding-left: 5px;
 }
 .rate .black{
   color: black;

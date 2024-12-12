@@ -3,11 +3,12 @@
     padding: 20px;
     border-radius: 20px;
 }
-.Review h3{
+.Review .name{
     display: flex;
     flex-direction: row;
     align-items: center;
     margin: 12px 0px;
+    color: black;
 }
 .Review .content{
     color:rgba(97, 96, 96) ;

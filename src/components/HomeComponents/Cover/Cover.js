@@ -6,7 +6,7 @@ const Cover = () => {
       <Container>
         <div className={classes.coverBody}>
           <div className={classes.coverContent}>
-            <h1>FIND CLOTHES THAT MATCHES YOUR STYLE</h1>
+            <h1 >FIND CLOTHES THAT MATCHES YOUR STYLE</h1>
             <p className={classes.subTitle}>
               Browse through our diverse range of meticulously crafted garments,
               designed to bring out your individuality and cater to your sense
