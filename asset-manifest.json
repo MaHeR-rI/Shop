@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/shop/static/css/main.a2247cef.css",
-    "main.js": "/shop/static/js/main.80484641.js",
+    "main.css": "/shop/static/css/main.f6898d6a.css",
+    "main.js": "/shop/static/js/main.85065282.js",
     "static/js/453.0f4552a2.chunk.js": "/shop/static/js/453.0f4552a2.chunk.js",
     "static/media/HomeCover.png": "/shop/static/media/HomeCover.bcaf3b70e5ca407c2275.png",
     "static/media/fa-solid-900.ttf": "/shop/static/media/fa-solid-900.ad1782c70927ebc5bc87.ttf",
@@ -21,12 +21,12 @@
     "static/media/revicons.woff": "/shop/static/media/revicons.e8746a624ed098489406.woff",
     "static/media/fa-v4compatibility.woff2": "/shop/static/media/fa-v4compatibility.c3ea317a0f10f201597f.woff2",
     "index.html": "/shop/index.html",
-    "main.a2247cef.css.map": "/shop/static/css/main.a2247cef.css.map",
-    "main.80484641.js.map": "/shop/static/js/main.80484641.js.map",
+    "main.f6898d6a.css.map": "/shop/static/css/main.f6898d6a.css.map",
+    "main.85065282.js.map": "/shop/static/js/main.85065282.js.map",
     "453.0f4552a2.chunk.js.map": "/shop/static/js/453.0f4552a2.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.a2247cef.css",
-    "static/js/main.80484641.js"
+    "static/css/main.f6898d6a.css",
+    "static/js/main.85065282.js"
   ]
 }
