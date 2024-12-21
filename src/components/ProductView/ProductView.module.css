@@ -1,0 +1,41 @@
+.gridView {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 40px;
+}
+.ProductInfo .productName {
+  color: black;
+  font-weight: bold;
+}
+.rate {
+  margin: 5px 0px;
+  display: flex;
+  flex-direction: row;
+  align-items: end;
+}
+.price,
+.price .productPrice {
+  margin: 0px;
+}
+.price .productPrice .oldPrice {
+  color: #616060;
+  text-decoration: line-through;
+  font-weight: 800;
+  margin-left: 8px;
+}
+.price .sale {
+  background-color: #ffebeb;
+  color: red;
+  border-radius: 12px;
+  text-align: center;
+  margin: 0;
+  display: inline-block;
+  padding: 5px 10px;
+  font-size: 11px;
+  margin-left: 8px;
+}
+.rate .rateValue {
+  color: #616060;
+  font-size: 16px;
+  padding-left: 5px;
+}

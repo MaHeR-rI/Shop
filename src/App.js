@@ -1,13 +1,15 @@
 import "./App.css";
 import Footer from "./components/layout/footerSetion/Footer";
 import Navbar from "./components/layout/navbarSection/Navbar";
-import Home from "./pages/Home";
+// import Home from "./pages/Home";
+import Product from "./pages/Product";
 
 function App() {
   return (
     <div className="App">
       <Navbar />
-      <Home />
+      {/* <Home /> */}
+      <Product/>
       <Footer />
     </div>
   );
