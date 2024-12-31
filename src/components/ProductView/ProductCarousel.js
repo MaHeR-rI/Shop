@@ -1,56 +1,36 @@
 import React, { useState } from "react";
-import { MDBCarousel, MDBCarouselItem, MDBContainer } from "mdb-react-ui-kit";
+import classes from "./ProductCarouel.module.css";
+import img1 from "../../assets/thumb1.png"
+import img3 from "../../assets/thumb3.png"
+import img4 from "../../assets/thumb4.png"
 
-export default function ProductCarousel() {
-  const [currentSlide, setCurrentSlide] = useState(0);
-
+const ProductCarousel = () => {
   const images = [
-    "https://mdbootstrap.com/img/Photos/Slides/img%20(88).webp",
-    "https://mdbootstrap.com/img/Photos/Slides/img%20(121).webp",
-    "https://mdbootstrap.com/img/Photos/Slides/img%20(31).webp",
+    { src: img1 , alt: "Thumbnail 1" },
+    { src: img3 , alt: "Thumbnail 3" },
+    { src: img4 , alt: "Thumbnail 3" },
   ];
 
-  // Handle the slide change
-  const handleSlide = (newIndex) => {
-    setCurrentSlide(newIndex);
-  };
+  const [mainImage, setMainImage] = useState(images[0].src);
 
   return (
-    <MDBContainer className="mt-5">
-      <MDBCarousel
-        activeItem={currentSlide + 1} // Adjust to MDBCarousel's activeItem format (starts from 1)
-        showControls
-        showIndicators
-        fade
-        onSlide={(e) => handleSlide(e.activeIndex - 1)} // Update the slide index
-      >
-        {images.map((src, index) => (
-          <MDBCarouselItem key={index} itemId={index + 1}>
-            <img
-              src={src}
-              alt={`Slide ${index + 1}`}
-              className="d-block w-100"
-            />
-          </MDBCarouselItem>
-        ))}
-      </MDBCarousel>
-
-      <div className="carousel-indicators mt-3">
-        {images.map((src, index) => (
-          <button
+    <div className={classes.carousel}>
+      <div className={classes.thumbnails}>
+        {images.map((image, index) => (
+          <img
             key={index}
-            className={`carousel-indicator ${currentSlide === index ? "active" : ""}`}
-            onClick={() => handleSlide(index)}
-            style={{ width: "100px" }}
-          >
-            <img
-              className="d-block w-100 img-fluid shadow-1-strong rounded"
-              src={src}
-              alt={`Thumbnail ${index + 1}`}
-            />
-          </button>
+            src={image.src}
+            alt={image.alt}
+            className={`${classes.thumbnail} ${mainImage === image.src ? classes.active : ""}`}
+            onClick={() => setMainImage(image.src)}
+          />
         ))}
       </div>
-    </MDBContainer>
+      <div className={classes.mainImage}>
+        <img src={mainImage} alt="Main Display" />
+      </div>
+    </div>
   );
-}
+};
+
+export default ProductCarousel;

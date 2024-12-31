@@ -10,7 +10,7 @@ const ProductView = () => {
   <Container>
     <div className={classes.gridView}>
       <div>
-{/* <ProductCarousel/> */}
+<ProductCarousel/>
       </div>
       <div className={classes.ProductInfo}>
       <div className={classes.card}>
