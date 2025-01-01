@@ -1,0 +1,33 @@
+.reviewsContainer{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;
+}
+.head{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    color: #000000;
+    margin-bottom: 20px;
+}
+.head h3{
+    color: black;
+}
+.head span:first-of-type{
+    background-color: #f0f0f0;
+    padding: 15px 25px;
+    border-radius: 30px;
+    cursor: pointer;
+}
+.head span:first-of-type img{
+    margin-left: 6px;
+}
+.head span:last-of-type{
+    background-color: #000000;
+    padding: 15px 25px;
+    border-radius: 30px;
+    color: white;
+    margin-left: 15px;
+    cursor: pointer;
+}
