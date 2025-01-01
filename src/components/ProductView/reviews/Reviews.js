@@ -23,7 +23,7 @@ const Reviews = () => {
           <Review/>
           <Review/>
       </div>
-<p><span>Load more reviews</span></p>
+<p className={classes.load}><span>Load more reviews</span></p>
 
     </Container>
   );

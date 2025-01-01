@@ -31,3 +31,14 @@
     margin-left: 15px;
     cursor: pointer;
 }
+.load{
+    text-align: center;
+    margin: 40px 0px 20px;
+}
+.load span{
+    border: 1px solid rgba(97, 96, 96, 0.25);
+    padding: 15px 25px;
+    border-radius: 30px;
+    cursor: pointer;
+    color: #000000;
+}
