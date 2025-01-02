@@ -1,0 +1,10 @@
+.cardsContainer{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    gap: 20px;
+    padding: 20px 0px;
+}
+.cardsContainer div{
+    flex: 1;
+}

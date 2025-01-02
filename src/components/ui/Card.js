@@ -17,7 +17,7 @@ const Card = () => {
         <p className={classes.productPrice}>
           $300<span className={classes.oldPrice}>$330</span>
         </p>
-        <p className={classes.sale}>30%</p>
+        <p className={classes.sale}>-30%</p>
       </div>
     </div>
   );
