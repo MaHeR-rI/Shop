@@ -1,4 +1,6 @@
 import Container from "../ui/Container";
+import Color from "./ChooseProduct/Color";
+import Size from "./ChooseProduct/Size";
 import ProductCarousel from "./ProductCarousel";
 import classes from "./ProductView.module.css";
 import { Rating } from "react-simple-star-rating";
@@ -32,6 +34,8 @@ const ProductView = () => {
               </p>
             </div>
           </div>
+          <Color/>
+          <Size/>
         </div>
       </div>
     </Container>
