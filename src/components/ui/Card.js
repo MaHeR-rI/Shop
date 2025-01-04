@@ -1,25 +1,38 @@
 import classes from "./Card.module.css";
-import img from "../../assets/product1.png";
 import { Rating } from "react-simple-star-rating";
+import { useNavigate } from "react-router-dom";
 
-const Card = () => {
+const Card = (props) => {
+  const navigate = useNavigate();
+
+  const handleDivClick = () => {
+    navigate("/Product"); // Navigate to the Counter page
+  };
+
   return (
-    <div className={classes.card}>
-      <img src={img} alt="product" />
-      <p className={classes.productName}>T-shirt with Tape Details</p>
-      <div className={classes.rate}>
-        <Rating initialValue={3.5} readonly={true} size={20} />{" "}
-        <span className={classes.rateValue}>
-          3.5/<span className={classes.black}>5</span>
-        </span>
-      </div>
-      <div className={classes.price}>
-        <p className={classes.productPrice}>
-          $300<span className={classes.oldPrice}>$330</span>
-        </p>
-        <p className={classes.sale}>-30%</p>
-      </div>
+    <div className={classes.card} onClick={handleDivClick}>
+      {/* Conditional rendering for props.data */}
+      {props.data && (
+        <>
+          <img src={props.data.img} alt={props.data.title} />
+          <p className={classes.productName}>{props.data.title}</p>
+          <div className={classes.rate}>
+            <Rating initialValue={props.data.rate} readonly={true} size={20} />
+            <span className={classes.rateValue}>
+              {props.data.rate} /<span className={classes.black}> 5</span>
+            </span>
+          </div>
+          <div className={classes.price}>
+            <p className={classes.productPrice}>
+              ${props.data.price}
+              <span className={classes.oldPrice}>{props.data.price}</span>
+            </p>
+            <p className={classes.sale}>-{props.data.disc}%</p>
+          </div>
+        </>
+      )}
     </div>
   );
 };
+
 export default Card;

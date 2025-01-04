@@ -4,7 +4,7 @@ import Title from "../../ui/Title";
 import classes from "./Arrivals.module.css";
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
-
+import Data from "../../Data/Data";
 const TopSelling = () => {
   const responsive = {
     superLargeDesktop: {
@@ -28,21 +28,22 @@ const TopSelling = () => {
   return (
     <Container>
       <Title>Top selling</Title>
-        <Carousel responsive={responsive}
+      <Carousel
+        responsive={responsive}
         transitionDuration={500}
         draggable={false}
         infinite={true}
         arrows={false}
         autoPlay={true}
         swipeable={false}
-        autoPlaySpeed={2000}>
-          <Card />
-          <Card />
-          <Card />
-          <Card />
-          <Card />
-          <Card />
-        </Carousel>
+        autoPlaySpeed={1500}
+      >
+        {Data && (
+            Data.slice(6, 12).map((item, index) => (
+              <Card data={item} key={index} />
+            ))
+        )}
+      </Carousel>
       <p className={classes.button}>View All</p>
     </Container>
   );
