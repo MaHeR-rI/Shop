@@ -8,13 +8,14 @@ import ScrollToTop from "./components/layout/scrollToTop/ScrollToTop";
 
 function App() {
   return (
-    <Router>
-      <ScrollToTop/>
+    <Router basename="/shop">
+      <ScrollToTop />
       <Navbar />
       <Routes>
-      <Route path="/" element={<Home />} />
-      <Route path="/Product" element={<Product />}/>
-      <Route path="*" element={<div>404</div>} />
+        <Route path="/" element={<Home />} />
+        <Route path="/home" element={<Home />} />
+        <Route path="/Product" element={<Product />} />
+        <Route path="*" element={<div>404</div>} />
       </Routes>
       <Footer />
     </Router>
