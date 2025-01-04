@@ -1,5 +1,6 @@
 import Container from "../ui/Container";
 import Color from "./ChooseProduct/Color";
+import Counter from "./ChooseProduct/Counter";
 import Size from "./ChooseProduct/Size";
 import ProductCarousel from "./ProductCarousel";
 import classes from "./ProductView.module.css";
@@ -36,6 +37,7 @@ const ProductView = () => {
           </div>
           <Color/>
           <Size/>
+          <Counter/>
         </div>
       </div>
     </Container>

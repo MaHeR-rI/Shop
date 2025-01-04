@@ -13,3 +13,8 @@
 .Review .content{
     color:rgba(97, 96, 96) ;
 }
+.Review .date{
+    margin-top: 20px;
+    margin-bottom: 0;
+    color: #00000099;
+}

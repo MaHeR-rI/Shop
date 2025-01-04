@@ -42,3 +42,42 @@
     background-color: #000000;
     color: white;
 }
+.counterSection{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: start;
+    gap: 10px;
+    margin-bottom: 16px;
+    padding-bottom: 16px;
+}
+.counter{
+    border-radius: 30px;
+    background-color: #f0f0f0;
+    padding: 12px 30px;
+    color: #00000099;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: start;
+    gap: 20px;
+}
+.submit{
+    background-color: #000000;
+    color: white;
+    border-radius: 30px;
+    cursor: pointer;
+    padding: 12px 25px;
+    margin: 0;
+    width: 100%;
+    text-align: center;
+  line-height: 34px;
+
+}
+.button,
+.dislay{
+border: none;
+font-size: 20px;
+color: #000000;
+width: 40px;
+}
