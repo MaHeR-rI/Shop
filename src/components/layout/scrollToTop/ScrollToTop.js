@@ -1,15 +1,27 @@
 import { useEffect } from "react";
 import { useLocation } from "react-router-dom";
 
-const ScrollToTop = () => {
+const ScrollToTop = ({ triggerScroll }) => {
   const { pathname } = useLocation();
 
-  useEffect(() => {
+  const scrollToTop = () => {
     window.scrollTo({
       top: 0,
       behavior: "smooth", // Smooth scrolling
     });
-  }, [pathname]); // Runs whenever the route changes
+  };
+
+  // Scroll to top on route changes
+  useEffect(() => {
+    scrollToTop();
+  }, [pathname]);
+
+  // Scroll on external triggers (like button clicks)
+  useEffect(() => {
+    if (triggerScroll) {
+      scrollToTop();
+    }
+  }, [triggerScroll]);
 
   return null; // This component doesn't render anything
 };

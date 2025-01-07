@@ -5,6 +5,7 @@ import Navbar from "./components/layout/navbarSection/Navbar";
 import Home from "./pages/Home";
 import Product from "./pages/Product";
 import ScrollToTop from "./components/layout/scrollToTop/ScrollToTop";
+import ShopView from "./pages/ShopView";
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/home" element={<Home />} />
         <Route path="/Product" element={<Product />} />
+        <Route path="/shops" element={<ShopView/>} />
         <Route path="*" element={<div>404</div>} />
       </Routes>
       <Footer />

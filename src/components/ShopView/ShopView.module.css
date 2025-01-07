@@ -1,0 +1,71 @@
+.body{
+    display: grid;
+    grid-template-columns: 3fr 9fr;
+    grid-gap: 20px
+}
+.sideBar{
+   background-color: green;
+    height: 300px; 
+}
+.head{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.head h2{
+    color: black;
+    font-weight: bold;
+    margin: 0;
+}
+.head > p{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    color: #00000099;
+    font-size: 14px;
+}
+.head  p{
+    margin: 0;
+}
+.head .filter{
+    color: black;
+}
+.cardsContainer{
+    display: grid;
+grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 30px;
+}
+.pagination .buttons{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 1px solid #0000002a;
+    padding-top: 20px;
+    margin-top: 40px;
+    text-align: center;
+}
+.pagination .buttons button{
+border: none;
+background-color: #ffffff;
+padding: 10px 20px;
+}
+.pagination .buttons .active{
+    background-color: #f0f0f0;
+    border-radius: 10px;
+}
+.pagination .buttons .prev,
+.pagination .buttons .next{
+    border: 1px solid #0000002a;
+    border-radius: 10px;
+    background-color: #ffffff;
+    padding: 10px 15px;
+    width: 130px;
+    display: block;
+    }
+    .pagination .buttons .prev img,
+.pagination .buttons .next img{
+    width: 20px;
+}
