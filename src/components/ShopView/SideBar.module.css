@@ -1,0 +1,16 @@
+.sideBar{
+    border-radius: 20px;
+    border: 1px solid #0000001a;
+    padding: 20px;
+}
+.head{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    color: black;
+    font-size: 18px;
+    font-weight: 700;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #0000001a;
+}

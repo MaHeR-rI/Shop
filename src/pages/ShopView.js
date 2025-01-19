@@ -1,12 +1,13 @@
 import Container from "../components/ui/Container";
 import classes from "../components/ShopView/ShopView.module.css";
 import ShopProducts from "../components/ShopView/ShopProducts";
+import SideBar from "../components/ShopView/SideBar";
 const ShopView = () => {
   return (
     <Container>
       <div className={classes.body}>
         
-        <div className={classes.shops}>2</div>
+        <SideBar/>
         <ShopProducts />
       </div>
     </Container>
