@@ -1,8 +1,9 @@
-import classes from "./ToggleDisplay.module.css";
 import React, { useState, useRef } from "react";
+import classes from "./ToggleDisplay.module.css";
 import arrow from "../../assets/arrowdown.png";
+import Color from "./Color";
 
-const ToggleDisplay = (props) => {
+const Colors = (props) => {
   const [isOpen, setIsOpen] = useState(true);
   const [selectedIndex, setSelectedIndex] = useState(null); // Track the selected color
   const answerRef = useRef(null);
@@ -31,20 +32,20 @@ const ToggleDisplay = (props) => {
           isOpen ? classes.open : classes.closed
         }`}
       >
-        <p className={classes.content} ref={answerRef}>
-          {props.data.map((filter, index) => (
-            <span
+        <div className={classes.content} ref={answerRef}>
+          {props.data.map((color, index) => (
+            <Color
               key={index}
-              onClick={() => setSelectedIndex(filter)}
-              className={`${selectedIndex === filter ? classes.selected : ""}`}
-            >
-              {filter}
-            </span>
+              color={color}
+              index={index}
+              selectedIndex={selectedIndex}
+              setSelectedIndex={setSelectedIndex}
+            />
           ))}
-        </p>
+        </div>
       </div>
     </div>
   );
 };
 
-export default ToggleDisplay;
+export default Colors;

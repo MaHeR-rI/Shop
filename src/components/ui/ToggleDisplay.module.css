@@ -11,16 +11,16 @@ padding-bottom: 15px;
   justify-content: space-between;
   color: #000000;
 }
-.faqToggle img {
+.toggle img {
   transition: 0.3s ease-out;
 }
-.faqToggle .open {
+.toggle .open {
   transform: rotate(180deg);
 }
-.faqToggle .closed {
+.toggle .closed {
   transform: rotate(0deg);
 }
-.faqAnswer {
+.data {
   overflow: hidden;
   transition: 0.3s ease-out;
 }
@@ -40,4 +40,30 @@ padding-bottom: 15px;
   padding: 6px 12px;
   margin: 0;
   text-align: center;
+}
+.content .selected{
+  background-color: #000000;
+  color: #ffffff;
+}
+.colors{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: start;
+  gap: 10px;
+  padding-bottom: 16px;
+}
+.colorBox{
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #00000033;
+}
+.colorBox span{
+  background-color: transparent;
 }
