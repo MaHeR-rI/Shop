@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import Container from "../../ui/Container";
 import classes from "./Cover.module.css";
 const Cover = () => {
@@ -12,7 +13,7 @@ const Cover = () => {
               designed to bring out your individuality and cater to your sense
               of style.
             </p>
-            <p className={classes.shopNow}>Shop Now</p>
+            <Link className={classes.shopNow} to="/shopping/Casual">Shop Now</Link>
             <div className={classes.statistics}>
               <div>
                 <h2>200+</h2>

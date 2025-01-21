@@ -26,8 +26,8 @@ const Navbar = () => {
     <Container>
       <MDBNavbar expand="lg" className="shadow-0">
         <MDBContainer fluid className="p-0">
-          <MDBNavbarBrand href="#" className={classes.brand}>
-            <img src={brand} alt="SHOP.CO" />{" "}
+          <MDBNavbarBrand href="/shop" className={classes.brand}>
+            <img src={brand} alt="SHOP.CO" />
           </MDBNavbarBrand>
           <MDBNavbarToggler
             aria-controls="navbarSupportedContent"
@@ -57,17 +57,17 @@ const Navbar = () => {
                 </MDBDropdown>
               </MDBNavbarItem>
               <MDBNavbarItem>
-                <MDBNavbarLink active aria-current="page" href="#">
+                <MDBNavbarLink href="/shop/shopping/On Sale" className="text-black">
                   On sale
                 </MDBNavbarLink>
               </MDBNavbarItem>
               <MDBNavbarItem>
-                <MDBNavbarLink href="#" className="text-black">
+                <MDBNavbarLink href="/shop/shopping/New Arrivals" className="text-black">
                   News Arrivals
                 </MDBNavbarLink>
               </MDBNavbarItem>
               <MDBNavbarItem>
-                <MDBNavbarLink href="#" className="text-black">
+                <MDBNavbarLink href="/shop/Brands" className="text-black">
                   Brands
                 </MDBNavbarLink>
               </MDBNavbarItem>

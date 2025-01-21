@@ -5,7 +5,9 @@ import Card from "../ui/Card";
 import arrowRight from "../../assets/arrow-right.png"
 import arrowLeft from "../../assets/arrow-left.png"
 import ScrollToTop from "../layout/scrollToTop/ScrollToTop";
-const ShopProducts = () => {
+
+const ShopProducts = (props) => {
+
   const data = Data;
   const [currentPage, setCurrentPage] = useState(1);
   const itemsPerPage = 9;
@@ -43,7 +45,7 @@ const ShopProducts = () => {
     <ScrollToTop triggerScroll={triggerScroll}/>
       <div className="">
         <div className={classes.head}>
-          <h2>Casual</h2>
+          <h2>{props.style}</h2>
           <p>
             Showing 1-10 of 100 Products<p>&#12644;
                Sort by: <span className={classes.filter}> Most Popular</span>

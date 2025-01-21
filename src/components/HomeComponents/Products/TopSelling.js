@@ -4,8 +4,10 @@ import Title from "../../ui/Title";
 import classes from "./Arrivals.module.css";
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
+import { Link } from "react-router-dom";
 import Data from "../../Data/Data";
 const TopSelling = () => {
+
   const responsive = {
     superLargeDesktop: {
       // the naming can be any, depends on you.
@@ -44,7 +46,7 @@ const TopSelling = () => {
             ))
         )}
       </Carousel>
-      <p className={classes.button}>View All</p>
+      <Link className={classes.button} to={`/shopping/Top Selling`}>View All</Link>
     </Container>
   );
 };

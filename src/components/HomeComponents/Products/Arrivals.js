@@ -3,9 +3,9 @@ import Container from "../../ui/Container";
 import Title from "../../ui/Title";
 import classes from "./Arrivals.module.css";
 import Data from "../../Data/Data";
+import { Link } from "react-router-dom"; // Import useNavigate
 
-const Arrivals = () => {
-  console.log(Data); // Inspect the value
+const Arrivals = () => {  
   return (
     <Container>
       <Title>new arrivals</Title>
@@ -16,7 +16,7 @@ const Arrivals = () => {
           ))}
         </div>
       )}
-      <p className={classes.button}>View All</p>
+      <Link className={classes.button} to={`/shopping/New Arrivals`}>View All</Link>
       <hr />
     </Container>
   );

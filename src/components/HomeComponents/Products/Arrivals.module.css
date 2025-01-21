@@ -9,6 +9,7 @@
     flex: 1;
 }
 .button{
+    display: block;
     max-width: 200px;
     text-align: center;
     margin: 40px auto;
@@ -17,9 +18,9 @@
     border-radius: 40px;
     transition: 0.3s;
     cursor: pointer;
+    color: black;
 }
 .button:hover{
     background-color: black;
     color: white;
-    transform: scale(1.02);
 }
