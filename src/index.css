@@ -42,3 +42,17 @@ code {
 .react-multi-carousel-list ul li{
   padding: 0px 10px !important;
 }
+
+.range-slider {
+  width: 20px;
+  box-shadow: none !important;
+}
+
+.range-slider .range-slider__thumb{
+  background-color: black !important;
+  width: 20px !important;
+  height: 20px !important;
+}
+.range-slider .range-slider__range{
+  background-color: #000000 !important;
+}

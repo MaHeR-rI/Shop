@@ -1,0 +1,32 @@
+.pricesValue {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+.ToggleDisplay {
+  padding: 15px 0px;
+}
+.head {
+  padding-bottom: 15px;
+  font-weight: bold;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  color: #000000;
+}
+.toggle img {
+  transition: 0.3s ease-out;
+}
+.toggle .open {
+  transform: rotate(180deg);
+}
+.toggle .closed {
+  transform: rotate(0deg);
+}
+.data {
+  overflow: hidden;
+  transition: 0.3s ease-out;
+}
+.content {
+  padding-top: 8px;
+}
